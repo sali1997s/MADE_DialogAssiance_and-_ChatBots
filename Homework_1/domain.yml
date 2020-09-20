@@ -1,0 +1,59 @@
+intents:
+  - greet
+  - goodbye
+  - functions
+  - how_are_you
+  - stocks_info
+  - affirm
+  - deny
+  - stocks_buy
+  - stocks_sell
+  - stocks_track
+
+entities:
+  - company
+  - number
+
+slots:
+  company:
+    type: text
+    initial_value: 'Google'
+
+  number:
+    type: text
+    initial_value: '1'
+
+responses:
+  utter_greet:
+  - text: "Hey!"
+
+  utter_how_are_you:
+  - text: "Fine. And you?"
+
+  utter_info:
+  - text: "Here is some information about {company}. Do you want to buy some?"
+
+  utter_ok:
+  - text: "Ok. Let me know if you want to buy some"
+
+  utter_stocks_buy:
+  - text: "Buying {number} {company}"
+
+  utter_buy:
+  - text: "Buying"
+
+  utter_func:
+  - text: "I'm StockBot. I can sell, buy, track stocks"
+
+  utter_bye:
+  - text: "Buy"
+
+  utter_stocks_sell:
+  - text: "Selling {number} {company}"
+
+  utter_track:
+  - text: "Tracking {company}"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
