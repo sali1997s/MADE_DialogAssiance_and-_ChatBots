@@ -1,1 +1,2 @@
-Rasa Stock Market ChatBot
+### Rasa Stock Market ChatBot
+buy + sell + track
